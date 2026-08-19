@@ -47,3 +47,10 @@ pos_pw_list = ["158f", "1655", "d21e", "4966", "ed69", "1010", "dded", "844c", "
 
 # well this is our challenge
 # and here is my solution
+"""
+in pw crack level 3 we handle all the proposal passwords cuz they were just 7 and this is a small number so
+i tried each one until i get the correct one 
+but now we have 100 potential passwords with only 1 being correct 
+we cant handle this large number manually so simply we will use one of the basic concepts in DSA
+"for loop" it will make everything simple by using iterations
+"""
