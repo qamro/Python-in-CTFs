@@ -33,3 +33,5 @@ echo "65" | xxd -r -p
 echo "63" | xxd -r -p
 echo "39" | xxd -r -p
 """
+# we can use this code to decode the user password(the hexadecimal values) as well:
+# print(''.join(chr(int(x, 16)) for x in ['34','65','63','39']))
