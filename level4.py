@@ -23,6 +23,23 @@ def hash_pw(pw_str):
     return m.digest()
 
 
+# this is the previous pw checking function
+"""
+def level_4_pw_check():
+    user_pw = input("Please enter correct password for flag: ")
+    user_pw_hash = hash_pw(user_pw)
+    
+    if( user_pw_hash == correct_pw_hash ):
+        print("Welcome back... your flag, user:")
+        decryption = str_xor(flag_enc.decode(), user_pw)
+        print(decryption)
+        return
+    print("That password is incorrect")
+
+
+
+level_4_pw_check()
+"""
 
 
 
@@ -43,6 +60,7 @@ but now we have 100 potential passwords with only 1 being correct
 we cant handle this large number manually so simply we will use one of the basic concepts in DSA
 "for loop" it will make everything simple by using iterations
 """
+# this is my new pw checking function using for loop
 def level_4_pw_check():
     for user_pw in pos_pw_list:
         user_pw_hash = hash_pw(user_pw)
