@@ -51,14 +51,15 @@ this operations is generally called brute force
 def level_5_pw_check():
     with open("dictionary.txt", "r") as file:
         for user_pw in file:  # here we read the file line by line
-            user_pw_hash = hash_pw(user_pw.strip())# we use user_pw.strip() not pw_user to not read \n that exists in the end of every line
+            user_pw = user_pw.strip() # we use user_pw.strip() not pw_user to not read \n that exists in the end of every line
+            user_pw_hash = hash_pw(user_pw)
         
             if( user_pw_hash == correct_pw_hash ):
                 print("Welcome back... your flag, user:")
                 decryption = str_xor(flag_enc.decode(), user_pw)
                 print(decryption)
                 return
-            print("That password is incorrect")
+                break
 
 
 
