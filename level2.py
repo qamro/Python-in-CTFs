@@ -25,3 +25,11 @@ def level_2_pw_check():
 
 
 level_2_pw_check()
+
+"""
+NOTE: i used this commands to decode the hexadecimal values:
+echo "34" | xxd -r -p
+echo "65" | xxd -r -p
+echo "63" | xxd -r -p
+echo "39" | xxd -r -p
+"""
