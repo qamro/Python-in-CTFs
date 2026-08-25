@@ -58,3 +58,21 @@ else:
     print("Unrecognized first argument: "+ sys.argv[1])
     print("Please use '-e', '-d', or '-h'.")
 
+"""
+my solution workflow is simple:
+1- Download the Python script using wget.
+2- List the files with ls -la.
+3- Find the file containing the password: password.txt.
+4- Read the password with cat password.txt.
+5- Identify the encrypted file: flag.txt.en.
+
+6- Use the script with -d to decrypt it:
+
+python3 ende.py -d flag.txt.en "720b6ad346f84cd483c60c7464dd95d4" > decrypted.txt
+
+7- Read the decrypted file:
+
+cat decrypted.txt
+
+8- Get the flag. 🚩
+"""
