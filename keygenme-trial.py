@@ -242,3 +242,28 @@ ui_flow()
 
 if jump_into_full:
     exec(full_version_code)
+
+
+
+"""
+my solution to get the flag is :
+key_part_static1_trial = "picoCTF{1n_7h3_kk3y_of_"
+key_part_dynamic1_trial = "xxxxxxxx"
+key_part_static2_trial = "}"
+so we need to get the dynamic part which is 8 characters
+and these 8 characters are in the check key function, just i noticed that there is #check dynamic part in line 157
+then i noticed that the characters are hexadecimal digest each one has a specific position in hash SHA256 of username = b"BENNETT"
+i created kegnme-trial-solution.py to find the hash SHA256 of username = b"BENNETT"
+and finally i found this serie ba6c084a4d888e1f7c3b0fc71d61c4625708bd915b5e0e60eb73e1667251b567
+and now i need just to use the indexes order one by one and select the characters :
+index 4 is 0
+index 5 is 8
+index 3 is c
+index 6 is 4
+index 2 is 6
+index 7 is a
+index 1 is a
+index 8 is 4
+so the dynamic part is 08c46aa4
+and the flag is : picoCTF{1n_7h3_kk3y_of_08c46aa4}
+"""
