@@ -2,6 +2,7 @@
 #============================ARCANE CALCULATOR===============================#
 #============================================================================#
 
+import sys
 import hashlib
 from cryptography.fernet import Fernet
 import base64
