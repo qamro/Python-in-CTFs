@@ -11,4 +11,4 @@
 
 ---
 
-**This repository contains Java scripts to solve reverse engineering challenges**
+**This repository contains Java programs to solve reverse engineering challenges**
