@@ -59,7 +59,7 @@ for key in ALPHABET:
     - Decode the resulting custom Base16.
     - Check which result is readable.
 
-6. The correct key is 'p', giving:
+6. The correct key is 'p' because by using brute force it is the only key that returns a meaningful flag, giving:
     et_tu?_77866c61
 
 7. Final flag:
